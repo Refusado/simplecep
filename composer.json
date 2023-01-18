@@ -1,0 +1,23 @@
+{
+    "name": "refu/simplecep",
+    "description": "Bucador de CEP simples e rápido.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renan",
+            "email": "orefusado@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Search": "src/"
+        },
+        "psr-4": {
+            "Refu\\SimpleCep\\": "src/"
+        }
+    }
+}
