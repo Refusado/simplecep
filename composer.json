@@ -5,11 +5,11 @@
     "license": "MIT",
     "scripts": {
         "test": "./vendor/bin/phpunit tests/",
-        "test-txt-report": "./vendor/bin/phpunit tests/ --testdox-text=report-tests.txt",
-        "test-coverage-report": "./vendor/bin/phpunit tests/ --coverage-html=_report",
+        "test-txt": "./vendor/bin/phpunit tests/ --testdox-text=report-tests.txt",
+        "test-coverage": "./vendor/bin/phpunit tests/ --coverage-html=_report",
         "test-full-report": "./vendor/bin/phpunit tests/ --testdox-text=report-tests.txt --coverage-html=_report",
 
-        "standard": "vendor/bin/phpcs src/ --standard=PSR12",
+        "standard": "vendor/bin/phpcbf src/ --standard=PSR12",
         "standard-check": "vendor/bin/phpcs src/ --standard=PSR12"
     },
     "authors": [
