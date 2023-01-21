@@ -10,6 +10,6 @@ class Search {
 
     $get = file_get_contents("$this->url/$zipCode/json");
 
-    return json_decode($get);
+    return (array) json_decode($get);
   }
 }
