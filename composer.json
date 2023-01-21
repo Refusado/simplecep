@@ -3,6 +3,20 @@
     "description": "Bucador de CEP simples e rápido.",
     "type": "library",
     "license": "MIT",
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit tests/"
+        ],
+        "test-txt-report": [
+            "./vendor/bin/phpunit tests/ --testdox-text=report-tests.txt"
+        ],
+        "test-coverage-report": [
+            "./vendor/bin/phpunit tests/ --coverage-html=_report"
+        ],
+        "test-full-report": [
+            "./vendor/bin/phpunit tests/ --testdox-text=report-tests.txt --coverage-html=_report"
+        ]
+    },
     "authors": [
         {
             "name": "Renan",

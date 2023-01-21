@@ -6,7 +6,7 @@ use Refu\SimpleCep\Search;
 class SearchTest extends TestCase
 {
   /**
-   * @dataProvider testData
+   * @dataProvider dataProvider
    */
   public function testGetAddressFromZipcodeDefaultUsage(string $codeInput, array $expected): void {
     $search = new Search;
@@ -15,7 +15,7 @@ class SearchTest extends TestCase
     $this->assertEquals($expected, $result);
   }
 
-  public function testData(): array {
+  public function dataProvider(): array {
     return [
       "Praça de Sé" => [
         "01001000",
